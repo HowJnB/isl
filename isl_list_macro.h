@@ -6,3 +6,5 @@
 #define FN(TYPE,NAME) xFN(TYPE,NAME)
 #define xLIST(EL) EL ## _list
 #define LIST(EL) xLIST(EL)
+#define xS(TYPE,NAME) struct TYPE ## _ ## NAME
+#define S(TYPE,NAME) xS(TYPE,NAME)
