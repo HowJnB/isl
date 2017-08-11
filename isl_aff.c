@@ -38,6 +38,7 @@
 #define BASE multi_aff
 
 #include <isl_list_templ.c>
+#include <isl_list_read.c>
 
 #undef BASE
 #define BASE pw_aff
