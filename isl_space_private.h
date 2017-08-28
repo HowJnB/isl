@@ -83,4 +83,9 @@ __isl_give isl_space *isl_space_unbind_params_insert_domain(
 
 int isl_space_cmp(__isl_keep isl_space *space1, __isl_keep isl_space *space2);
 
+#undef EL
+#define EL isl_space
+
+#include <isl_list_templ.h>
+
 #endif

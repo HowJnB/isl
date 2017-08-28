@@ -2,6 +2,7 @@
 #define ISL_SPACE_TYPE_H
 
 #include <isl/ctx.h>
+#include <isl/list.h>
 
 #if defined(__cplusplus)
 extern "C" {
@@ -9,6 +10,8 @@ extern "C" {
 
 struct __isl_export isl_space;
 typedef struct isl_space isl_space;
+
+ISL_DECLARE_LIST_TYPE(space)
 
 enum isl_dim_type {
 	isl_dim_cst,

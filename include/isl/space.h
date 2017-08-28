@@ -13,6 +13,7 @@
 #include <isl/ctx.h>
 #include <isl/space_type.h>
 #include <isl/id_type.h>
+#include <isl/list.h>
 #include <isl/printer.h>
 
 #if defined(__cplusplus)
@@ -182,6 +183,8 @@ __isl_give char *isl_space_to_str(__isl_keep isl_space *space);
 __isl_give isl_printer *isl_printer_print_space(__isl_take isl_printer *p,
 	__isl_keep isl_space *space);
 void isl_space_dump(__isl_keep isl_space *space);
+
+ISL_DECLARE_LIST_FN(space)
 
 #if defined(__cplusplus)
 }

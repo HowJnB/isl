@@ -20,6 +20,11 @@
 #include <isl_id_private.h>
 #include <isl_reordering.h>
 
+#undef EL_BASE
+#define EL_BASE space
+
+#include <isl_list_templ.c>
+
 isl_ctx *isl_space_get_ctx(__isl_keep isl_space *space)
 {
 	return space ? space->ctx : NULL;
