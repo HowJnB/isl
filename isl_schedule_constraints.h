@@ -30,6 +30,10 @@ __isl_give isl_schedule_constraints *isl_schedule_constraints_add(
 	__isl_take isl_schedule_constraints *sc, enum isl_edge_type type,
 	__isl_take isl_union_map *c);
 
+__isl_give isl_schedule_constraints *isl_schedule_constraints_intersect_domain(
+	__isl_take isl_schedule_constraints *sc,
+	__isl_take isl_union_set *domain);
+
 int isl_schedule_constraints_n_basic_map(
 	__isl_keep isl_schedule_constraints *sc);
 int isl_schedule_constraints_n_inter_consecutivity_map(
